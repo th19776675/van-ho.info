@@ -1,0 +1,164 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#thom-logo {
+    width:100px;
+    overflow:visible; 
+}
+
+.logo-wrapper {
+    height: 50px;
+}
+
+#thom-head {
+    width: 75px;
+    fill: #212121;
+}
+
+.outer-wrapper {
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.inner-wrapper {
+    width:600px;
+    padding-top: 25px;
+}
+
+.footer {
+    text-align: center;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    height: calc(100vh - 250px);
+    border: 2px solid #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.menu {
+    display:flex;
+}
+
+.name-menu{
+    height: 33px;
+    width: 160px;
+    border: 2px solid #212121 ;
+    border-bottom:none;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.25em;
+    background-color: white;
+}
+
+.cat-menu{
+    height: 33px;
+    width: 160px;
+    border: 2px solid #212121 ;
+    border-top: none;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.25em;
+}
+
+.name-menu:hover{
+    color: white;
+    background-color: #212121;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.cat-menu:hover{
+    color: white;
+    background-color: #212121;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.thom {
+    border-right: none; 
+}
+
+.ben {
+    border-right: none;
+}
+
+.thinh {
+    border-right: none;
+}
+
+.portfolio {
+    border-right: none; 
+}
+
+.payroll {
+    border-right: none;
+}
+
+.contact {
+    border-right: none;
+}
+
+.loader-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    flex-flow: column;
+    animation: loader 1s ease-in 3s 1 normal;
+    animation-fill-mode: forwards;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.up {
+    animation: NE 0.6s ease-in-out 0s infinite alternate;
+}
+
+.down{
+    animation: SW 0.6s ease-in-out 0s infinite alternate; 
+}
+
+@keyframes NE {
+    0% {transform: translate(0)} 
+    100% {transform: translate(50px, 0px)}
+} 
+
+@keyframes SW {
+    0% {transform: translate(0)} 
+    100% {transform: translate(50px, 50px)}
+} 
+
+@keyframes loader {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}

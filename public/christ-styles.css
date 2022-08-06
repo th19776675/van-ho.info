@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.KontoraThin {
+	font-family: KontoraThin;
+}.KontoraLight {
+	font-family: KontoraLight;
+}.KontoraRegular {
+	font-family: "Kontora-Regular";
+}.KontoraMedium {
+	font-family: KontoraMedium;
+}.KontoraSemiBold {
+	font-family: "Kontora-SemiBold";
+}.KontoraBold {
+	font-family: "Kontora-Bold";
+}.KontoraExtraBold {
+	font-family: KontoraExtraBold;
+}.KontoraBlack {
+	font-family: KontoraBlack;
+}.KontoraExtraBlack {
+	font-family: KontoraExtraBlack;
+}
+
+.outer-wrapper {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+}
+
+.inner-wrapper {
+    width: 250px;
+    height: 250px;
+    /* background: green; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 40px;
+    width: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    margin-left: 2px;
+    margin-right:2px;
+}
+
+.play-btn:hover {
+    background-color: lightgrey;
+
+}
+
+.indent {
+    text-indent: 5em; 
+}
+
+.small {
+    font-size: 11pt;
+    line-height: 12pt ;
+}
+
+.large {
+    line-height: 18pt;
+}
