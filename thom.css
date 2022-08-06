@@ -1,0 +1,253 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#thom-logo {
+    width:100px;
+    overflow:visible; 
+}
+
+.logo-wrapper {
+    height: 50px;
+}
+
+#thom-head {
+    width: 75px;
+    fill: #212121;
+}
+
+.outer-wrapper {
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.inner-wrapper {
+    width:600px;
+    padding-top: 25px;
+}
+
+.footer {
+    text-align: center;
+
+}
+
+.pay-box {
+    border: solid 2px;
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 0.75em;
+}
+
+.amount {
+    text-align: center;
+    border-top: solid 1px;
+    font-size: 1em;
+    padding-top:10px;
+    margin-top: 10px;
+}
+
+.pad {
+    margin: 2px 0;
+}
+
+.current-pro {
+    width:300px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-wrapper {
+    padding-top: 50px;
+}
+
+.content-box {
+    height: calc(100vh - 250px);
+    border: 2px solid #212121;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    display: flex;
+    justify-content: center;
+}
+
+.center-content {
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hide {
+    display:none;
+}
+
+.no-tab {
+    width:300px;
+    height: 300px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 0.75em ;
+}
+
+.border {
+    border: 2px solid #212121;
+}
+
+.menu {
+    display:flex;
+}
+
+.name-menu{
+    height: 33px;
+    width: 160px;
+    border: 2px solid #212121 ;
+    border-bottom:none;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.25em;
+}
+
+.portfolio-wrapper {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.port-img {
+    width: 360px;
+    margin-top: 25px;
+}
+
+.download-btn {
+    width: 360px;
+    height: 35px;
+    border: 2px solid #212121;
+    border-radius: 0%;
+    background: white;
+    font-size: 1.25em;
+    /* letter-spacing: 2.5px; */
+}
+
+.download-btn:hover {
+    background-color: #212121;
+    color: white;
+}
+
+
+.cat-menu{
+    height: 33px;
+    width: 160px;
+    border: 2px solid #212121 ;
+    border-top: none;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.25em;
+}
+
+
+.name-menu:hover{
+    color: white;
+    background-color: #212121;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.cat-menu:hover{
+    color: white;
+    background-color: #212121;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.thom {
+    border-right: none; 
+}
+
+.ben {
+    border-right: none;
+}
+
+.thinh {
+    border-right: none;
+    color: white;
+    background-color: #212121;
+    font-weight: bold;
+}
+
+.thinh:hover {
+    color: #212121;
+    background: white;
+    transition: all 0.5s;
+    font-weight: normal;
+}
+
+.portfolio {
+    border-right: none; 
+}
+
+.payroll {
+    border-right: none;
+}
+
+.contact {
+    border-right: none;
+}
+
+.loader-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    flex-flow: column;
+    animation: loader 1s ease-in 5s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+.up {
+    animation: NE 0.6s ease-in-out 0s infinite alternate;
+}
+
+.down{
+    animation: SW 0.6s ease-in-out 0s infinite alternate; 
+}
+
+@keyframes NE {
+    0% {transform: translate(0)} 
+    100% {transform: translate(50px, 0px)}
+} 
+
+@keyframes SW {
+    0% {transform: translate(0)} 
+    100% {transform: translate(50px, 50px)}
+} 
+
+@keyframes loader {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
